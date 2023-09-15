@@ -1,11 +1,11 @@
-"use client"
+
 import './globals.css'
 import '../assets/scss/main.scss'
 import '../assets/scss/res.scss'
 import { Inter, Poppins } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import { useEffect } from 'react'
+
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({
@@ -19,11 +19,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      require('bootstrap/dist/js/bootstrap.js')
-    }
-  }, [])
+  
   return (
     <html lang="en">
       <body className={poppins.className}>
