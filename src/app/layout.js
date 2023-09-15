@@ -4,7 +4,7 @@ import '../assets/scss/main.scss'
 import '../assets/scss/res.scss'
 import { Inter, Poppins } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
