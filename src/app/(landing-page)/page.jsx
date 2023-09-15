@@ -1,3 +1,5 @@
+'use client'
+import {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../page.module.css'
@@ -20,6 +22,7 @@ import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import FaqSection from '../../components/landing-page/FaqSection'
 
 export default function Home() {
+  const [isLocationOpen, setIsLocationOpen] = useState(false);
   return (
     <main className='main-landing-page'>
       <div className="main-header">
@@ -45,47 +48,50 @@ export default function Home() {
                 <div className="locate-search-wrapper mt-3">
                   <div className="locate-search-input">
                     <Image src={locateIcon} alt="" width={35} height={35} />
-                    <input type="text" placeholder='Enter your location' />
+                    <input type="text" placeholder='Enter your location' onClick={()=>setIsLocationOpen(prev=>!prev)} />
                   </div>
                   <button>
                     <Image src={detectLocationIcon} alt="" width={35} height={35} />
                     <span>Locate Me</span>
                   </button>
                   {/* locations */}
-                  <div className="drop-locations-wrap">
-                    <ul>
-                      <li>
-                        <button>
-                          <FmdGoodOutlinedIcon />
-                          <span>Noorani Nagar, Indore, Madhya Pradesh, India</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button>
-                          <FmdGoodOutlinedIcon />
-                          <span>Noorani Masjid, 6th Main Road, Ilyas Nagar, Kumaraswamy Layout, Bengaluru, Karnataka, India</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button>
-                          <FmdGoodOutlinedIcon />
-                          <span>NOORANI MASJID, Rani Sati Road, Malad, MBH Colony, Pathan Wadi, Malad East, Mumbai, Maharashtra, India</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button>
-                          <FmdGoodOutlinedIcon />
-                          <span>Noorani Chowk, Govind Nagar, Raipur, Chhattisgarh, India</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button>
-                          <FmdGoodOutlinedIcon />
-                          <span>Noorani, Valakkad, Palakkad, Kerala, India</span>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
+                  {
+                    isLocationOpen &&
+                    <div className="drop-locations-wrap">
+                      <ul>
+                        <li>
+                          <button onClick={()=>setIsLocationOpen(prev=>!prev)}>
+                            <FmdGoodOutlinedIcon />
+                            <span>Noorani Nagar, Indore, Madhya Pradesh, India</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button onClick={()=>setIsLocationOpen(prev=>!prev)}>
+                            <FmdGoodOutlinedIcon />
+                            <span>Noorani Masjid, 6th Main Road, Ilyas Nagar, Kumaraswamy Layout, Bengaluru, Karnataka, India</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button onClick={()=>setIsLocationOpen(prev=>!prev)}>
+                            <FmdGoodOutlinedIcon />
+                            <span>NOORANI MASJID, Rani Sati Road, Malad, MBH Colony, Pathan Wadi, Malad East, Mumbai, Maharashtra, India</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button onClick={()=>setIsLocationOpen(prev=>!prev)}>
+                            <FmdGoodOutlinedIcon />
+                            <span>Noorani Chowk, Govind Nagar, Raipur, Chhattisgarh, India</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button onClick={()=>setIsLocationOpen(prev=>!prev)}>
+                            <FmdGoodOutlinedIcon />
+                            <span>Noorani, Valakkad, Palakkad, Kerala, India</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  }
                 </div>
                 <div className="cities-container">
                   <h3 className="sm-head">
