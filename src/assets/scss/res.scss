@@ -46,6 +46,9 @@
     }
 }
 @media(max-width:600px){
+    .app-sec .sec-head{
+        margin-bottom: 0px !important;
+    }
     .locate-search-wrapper .drop-locations-wrap ul li button{
         padding: 15px 8px;
     }
