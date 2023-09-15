@@ -18,7 +18,7 @@ body{
         $line-h: $ss + 10px;
         
         h3{
-            font-weight: 800;
+            font-weight: 600;
             color: #636363;
             font-size: $ss;
             line-height: $line-h;
@@ -37,7 +37,7 @@ body{
             span{
                 color: $dark;
                 display: block;
-                font-weight: 800;
+                font-weight: 600;
                 line-height: $line-h;
             }
         }
@@ -293,7 +293,7 @@ body{
     padding: 5em 0px;
 }
 .sec-head{
-    font-weight: 800;
+    font-weight: 600;
     font-size: 38px;
     color: $dark;
 
