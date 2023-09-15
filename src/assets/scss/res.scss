@@ -1,0 +1,96 @@
+@media(max-width: 1300px){
+    .ld-ban-con .ld-ban-heading h3 span, .ld-ban-con .ld-ban-heading h3{
+        font-size: 32px;
+    }
+    .ld-ban-con .ld-ban-heading h3 > div{
+        margin-top: 0;
+    }
+}
+@media(max-width: 991px){
+    .ld-ban-con{
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    .container-left{
+        padding: 0px 1em !important;
+    }
+    .ld-hero-ban{
+        margin-top: 2em;
+    }
+    .ld-hero-im{
+        padding-top: 3em;
+    }
+    .ld-hero-ban .ld-hero-im img{
+        height: auto;
+    }
+    .app-mockup{
+        margin: 0 auto;
+        margin-top: 1.5em;
+        max-width: 450px;
+    }
+    .app-sec > img{
+        bottom: 0;
+    }
+    .app-sec.pb-0{
+        padding-bottom: 3em !important;
+    }
+    .sec{
+        padding: 3em 0px !important;
+    }
+    .dw-btns{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .sec-head{
+        font-size: 32px;
+    }
+}
+@media(max-width:600px){
+    .locate-search-wrapper .drop-locations-wrap ul li button{
+        padding: 15px 8px;
+    }
+    .ft-bottom{
+        justify-content: center;
+        gap: 25px;
+    }
+    .main-footer{
+        padding-bottom: 1.5em;
+    }
+    .ld-main-nav .ld-nav-inner .main-nav-logo{
+        max-width: 130px;
+    }
+    .faq-ot p{
+        font-size: 14px;
+    }
+    .ld-nav-inner {
+
+        .main-btn{
+            padding: 8px 15px;
+
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media(max-width: 400px){
+    .ld-ban-con .ld-ban-heading h3 span, .ld-ban-con .ld-ban-heading h3{
+        font-size: 28px;
+    }
+    .locate-search-wrapper{
+        flex-direction: column;
+    }
+    .locate-search-wrapper button{
+        max-width: max-content;
+    }
+    .ft-card .ft-icon{
+        width: 55px;
+        height: 55px;
+    }
+    .ft-card h3{
+        font-size: 18px;
+    }
+    .ld-nav-inner .main-btn span{
+        font-size: 12px;
+    }
+}
