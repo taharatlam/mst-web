@@ -3,7 +3,7 @@ import React from 'react'
 const PrivacyPolicy = () => {
   return (
     <>
-        <header className="inner-header has-border">
+        <header className="inner-header ">
             <div className="container">
                 <div className="row">
                     <div className="banner-con">
